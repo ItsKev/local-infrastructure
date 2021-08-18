@@ -1,0 +1,9 @@
+apiVersion: k3d.io/v1alpha2
+kind: Simple
+name: dev
+servers: 1
+agents: 1
+ports:
+  - port: 25577:30000
+    nodeFilters:
+      - agent[0]
