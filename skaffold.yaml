@@ -8,7 +8,12 @@ build:
     context: proxy
     docker:
       dockerfile: Dockerfile
+  - image: minecraft
+    context: minecraft
+    docker:
+      dockerfile: Dockerfile
 deploy:
   kubectl:
     manifests:
     - proxy/*.yaml
+    - minecraft/*.yaml

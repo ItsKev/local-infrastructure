@@ -4,4 +4,4 @@ COPY ./data/ /data/
 
 WORKDIR /data/
 
-CMD ["java", "-jar", "waterfall.jar"]
+CMD ["java", "-jar", "paper.jar"]
