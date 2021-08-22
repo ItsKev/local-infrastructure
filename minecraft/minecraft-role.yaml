@@ -5,5 +5,5 @@ metadata:
   name: minecraft-role
 rules:
   - apiGroups: [""]
-    resources: ["endpoints"]
-    verbs: ["get"]
+    resources: ["pods"]
+    verbs: ["list"]
