@@ -18,6 +18,15 @@ spec:
       containers:
       - name: proxy
         image: proxy
+        env:
+          - name: CONNECTION_STRING
+            value: "mongodb://mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-1.mongodb-headless.mongodb.svc.cluster.local:27017/?replicaSet=rs0"
+          - name: AUTHENTICATION_DATABASE
+            value: admin
+          - name: USERNAME
+            value: root
+          - name: PASSWORD
+            value: testee
         resources:
           limits:
             memory: "1Gi"

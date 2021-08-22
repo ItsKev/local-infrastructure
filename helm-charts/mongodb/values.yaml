@@ -1,0 +1,4 @@
+architecture: replicaset
+replicaCount: 2
+auth:
+  rootPassword: testee
