@@ -6,7 +6,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: default
-    namespace: default
+    namespace: proxy
 roleRef:
   kind: Role
   name: minecraft-role
